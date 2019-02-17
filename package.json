@@ -2,5 +2,9 @@
   "private": true,
   "workspaces": [
     "seed-*"
-  ]
+  ],
+  "scripts": {
+    "rmNodeModules": "rm -rf node_modules seed**/node_modules",
+    "rmLock": "rm -f yarn.lock seed**/yarn.lock"
+  }
 }

@@ -1,5 +1,6 @@
 # 2019-02-17 (monorepo kick-off)
 
+- regenerate `yarn.lock` file and dependency tree
 - upgrade dependency versions on workspace _seed-react-app_
 - add workspace _seed-react-app_
 - prefix all workspaces with `"seed-*"`
