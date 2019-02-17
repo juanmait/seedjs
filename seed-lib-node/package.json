@@ -1,5 +1,5 @@
 {
-  "name": "lib-node",
+  "name": "seed-lib-node",
   "description": "This setup is for development of libraries that should run on **NodeJS only**.",
   "version": "1.0.0",
   "license": "MIT",

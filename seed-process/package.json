@@ -1,5 +1,5 @@
 {
-  "name": "process",
+  "name": "seed-process",
   "version": "1.0.0",
   "description": "Setup to develop NodeJS _long-running_ process like HTTP servers, cronjobs, micro-services or cli tools.",
   "license": "MIT",

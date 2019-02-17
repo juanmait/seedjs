@@ -1,5 +1,5 @@
 {
-  "name": "lib",
+  "name": "seed-lib",
   "description": "This setup is for development of libraries that should run on both, nodejs and the browser.",
   "version": "1.0.0",
   "license": "MIT",

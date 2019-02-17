@@ -1,5 +1,6 @@
 # 2019-02-17 (monorepo kick-off)
 
+- prefix all workspaces with `"seed-*"`
 - add workspace _lib-node_
 - add workspace _lib_
 - upgrade dependency versions on workspace _process_
