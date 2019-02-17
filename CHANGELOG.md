@@ -1,5 +1,6 @@
 # 2019-02-17 (monorepo kick-off)
 
+- rename workspace _seed-lib_ to _seed-lib-agnostic_
 - add workspace _seed-lib-browser_
 - upgrade dependency versions on workspace _seed-electron-react-basic_
 - add workspace _seed-electron-react-basic_

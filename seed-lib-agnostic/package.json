@@ -1,6 +1,6 @@
 {
-  "name": "seed-lib",
-  "description": "This setup is for development of libraries that should run on both, nodejs and the browser.",
+  "name": "seed-lib-agnostic",
+  "description": "This setup is for development of libraries that should run on both, nodejs and the browser without using native APIs.",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {

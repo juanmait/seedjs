@@ -1,21 +1,27 @@
-# SeedJS
+# Seed Lib Agnostic
 
-This setup is for development of libraries that should run on both, nodejs and
-the browser.
+This setup is for development of libraries that should be able to run on both,
+nodejs and the browser, but without using native APIs.
 
 ## Use Cases
 
 This are the _ideal_ use cases. As such, not always will be posible to stay
 _aligned_. So some of the restrictions can be easily disabled via configuring
-eslint, tsconfig and or installing @types.
+eslint, tsconfig and or installing the desired @types.
 
 1. _**Agnostic libraries**_ that _should_ NOT call native APIs at all, neither
    from Nodejs or the browser.
 2. Libraries that can eventually READ from native APIs only to know more about
-   the kind of environment in which they are running (e.g.:
-   `if (window && window.localStorage) { ... }`).
+   the kind of environment in which they are running. E.g.:
+   ```js
+   if (window && window.localStorage) {
+     /* we know that we're running on the browser.. */
+     /* do something without calling any native APIs */
+   }
+   ```
 3. Libraries that based on the info from point **2**, decides to use a nodejs
    targeted lib or a browser targeted lib to do the same job.
+4. Another way to use an agnostic library would be use it like an interface.
 
 **Note 1**: Keep in mind that ideally a _library_ is just a set of tools,
 utilities or helpers that does nothing by themselves but instead are intended to
