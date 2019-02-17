@@ -1,0 +1,77 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
+
+    // see: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#new---skiplibcheck
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+
+    "target": "esnext",
+    "module": "esnext",
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": false,
+
+    /**
+     * make go-to-definition on a declaration from a .d.ts file go to the source
+     * file (.ts) location where that declaration was defined, and not to
+     * the .d.ts.
+     * The options is disabled and should remain that way to play well with
+     * babel. However it can be enabled via --declarationMap cli option like the
+     * `build:types` script does.
+     */
+    "declarationMap": false,
+
+    // "sourceMap": true,
+    // "outFile": "./",
+    "outDir": "build",
+    "rootDir": "./src",
+    // "composite": true,
+    // "removeComments": true,
+    "noEmit": true,
+    "pretty": true,
+    "importHelpers": false,
+    // "downlevelIteration": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    // "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    // "baseUrl": "./",
+    // "paths": {},
+    // "typeRoots": [],
+    // "types": [],
+    "allowSyntheticDefaultImports": true,
+    // "preserveSymlinks": true,
+    // "sourceRoot": "",
+    // "mapRoot": "",
+    // "inlineSourceMap": true,
+    // "inlineSources": true,
+    "experimentalDecorators": false,
+    "emitDecoratorMetadata": false
+  },
+  "include": ["src", "typings"],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/*.spec.js",
+    "**/*.test.js",
+    "**/*.test.jsx",
+    "**/*.test.tsx",
+    "**/*.spec.jsx",
+    "**/*.spec.tsx"
+  ]
+}

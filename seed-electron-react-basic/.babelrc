@@ -1,0 +1,22 @@
+{
+  "presets": [
+    [
+      "react-app",
+      {
+        "flow": false,
+        "typescript": true,
+        "useESModules": false
+      }
+    ],
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "electron": "4.0.4"
+        },
+        "ignoreBrowserslistConfig": true
+      }
+    ]
+  ],
+  "plugins": ["react-require", "inline-react-svg"]
+}
