@@ -1,64 +1,50 @@
 # SeedJS
 
-A scaffolding repo to develop a myriad of different javascript apps and
-libraries. It comes in different _flavors_ organized in branches, all of them
-for different purposes, setups and/or platforms:
+changeA scaffolding _[monorepo]_ that showcases a myriad of different setups to
+develop javascript apps and libraries. It comes in different _flavors_ organized
+in [workspaces], all of them for different purposes, setups, runtimes and/or
+platforms:
 
-| status   | branch        | description                                                             |
-| -------- | ------------- | ----------------------------------------------------------------------- |
-| **done** | `master`      | main features will be added here before spreading to the other branches |
-| **done** | `process`     | NodeJS _long-running_ processes (like an HTTP server)                   |
-| todo     | `lib`         | Libs that must work on both sides, nodejs and the browser               |
-| todo     | `lib-node`    | Libs that should work on NodeJS only                                    |
-| todo     | `lib-browser` | Libs that should work on the browser only                               |
-| **done** | `react-app`   | Frontend React Apps based on [create-react-app]                         |
+| status   | branch                 | description                                                                                         |
+| -------- | ---------------------- | --------------------------------------------------------------------------------------------------- |
+| **done** | `electron-react-basic` | showcases a setup to work with [react] in [electron] without using [create-react-app] or [webpack]. |
+| **done** | `lib-agnostic`         | libs targeting nodejs and/or the browser without using native APIs                                  |
+| todo     | `lib`                  | libs targeting nodejs and the browser with _free_ access to native APIs of both sides               |
+| todo     | `lib-node`             | Libs targeting NodeJS only                                                                          |
+| todo     | `lib-browser`          | Libs targeting the browser only                                                                     |
+| **done** | `process`              | NodeJS _long-running_ processes (like an HTTP server)                                               |
+| **done** | `react-app`            | Frontend React Apps based on [create-react-app] (no ejected)                                        |
+
+Most of the time, the differences between setups are very subtle, only changing
+some linting config, babel plugin or dependency. The main goal of all of this is
+to make those distinctions visible and clear, to share dependencies and
+versions, to get a predictable development environment and a nice DX in visual
+studio code.
 
 ## Features
 
-All the above _flavors_ includes:
+All the setups above includes:
 
 - The option to write code in typescript, ES2018 or both.
 - First class support in visual studio code:
-  - Linting on the IDE by using [tslint] or [eslint]
-  - Auto format via [prettier] (support files like `.ts`, `.js`, `.tsx`,
+  - Linting on the IDE by using [tslint] and/or [eslint]
+  - Auto formating via [prettier] (support files like `.ts`, `.js`, `.tsx`,
     `.jsx`, `.json`, `.md` and more).
   - run the current file on the IDE with a simple shortcut without the need
     of compile ([babel-node] is used for regular files and [jest] for test
     files).
   - easy debugging.
-- Convenient ways to lint, fix and auto format the source code via yarn scripts
+- Convenient ways to lint, fix and auto format the source code via yarn scripts.
 - Testing with JEST:
   - support for typescript and ES2018 without the need of any previous
     compilation.
   - support for [inline snapshots][inline-snapshots] via [prettier].
 - Easy configurable GIT Hooks to make testing, linting, type checking, code
-  fixing and formatting, etc..
+  fixing, code formatting, etc..
 
-## How to start
+## Recommended vscode extensions:
 
-1. Create a new repo in your local machine (or clone it from your account).
-2. Add a new remote referencing this one (for example: _upstream_):
-   `git remote add upstream git@github.com:juanmait/seedjs.git`.
-3. Fetch the latest data from _upstream_: `git fetch upstream`.
-4. Now let's say you want to base your work on top the `process` branch
-   from upstream, then: `git merge upstream/process`. Now you _master_ branch
-   should contain the same content as the `process` branch.
-
-## How to sync
-
-Integrate the latest changes that may have happened on _upstream_
-
-```bash
-# update upstream data
-$ git fetch upstream
-
-# merge your branch with the same branch from upstream as before
-$ git merge upstream/process
-```
-
-### Recommended vscode extensions:
-
-This project works better with this specific vscode plugins/extensions:
+All the _flavors_ works better with this specific vscode plugins/extensions:
 
 - [prettier-vscode] - format almost all files (`.md`, `.js`, `.ts`, `.tsx`,
   `.json`, etc..) with one simple shortcut on the IDE.
@@ -70,51 +56,13 @@ This project works better with this specific vscode plugins/extensions:
   [snapshots][snapshot-testing].
 - [markdown-checkbox] - add support for github checkboxes when previewing `.md`
   files.
-- [code-spell-checker] ... please?
+- [code-spell-checker] ... yes! please!?
 
 ## Development
 
 ```bash
 $ yarn install
 ```
-
-### Common scripts valid vor all branches
-
-```bash
-$ yarn build
-# build for prod (should run prebuild automatically)
-
-$ yarn prebuild
-# run `clean`, `fix`, `lint` & `checkTypes`
-
-$ yarn test
-# run all the test files using JEST
-
-$ yarn checkTypes
-# check for typescript errors
-
-$ yarn lint
-# check for lint errors using tslint for `.ts` files and eslint for `.js`.
-
-$ yarn fix
-# run auto format and auto fix using `prettier-tslint` and `prettier-eslint`
-
-$ yarn checkConflicts
-# detect eslint/tslint configurations that can collide with prettier
-
-$ yarn checkTslint
-# check for any conflict between `tslint` and prettier configs. Run this when
-# you add new rules to your tslint.json file. It will warn you about what are
-# the rules that you should avoid.
-
-$ yarn checkEslint
-# same as above but for `eslint`
-
-$ yarn clean
-# remove the build folder
-```
-
-Check the README and `package.json` in the branch of your choice for more.
 
 ## Vscode shortcuts reference:
 
@@ -153,7 +101,7 @@ javascript files! It's up to you to make it less restrictive if you want. Check
 
 ## Some links
 
-**Dependencies:**
+**Common Dependencies:**
 
 - [prettier]
 - [eslint]
@@ -165,7 +113,6 @@ javascript files! It's up to you to make it less restrictive if you want. Check
 - [lint-staged]
 - [babel-node]
 - [prettier-eslint-cli]
-- [create-react-app]
 
 [tslint]: https://palantir.github.io/tslint/
 [prettier]: https://prettier.io/
@@ -176,7 +123,16 @@ javascript files! It's up to you to make it less restrictive if you want. Check
 [babel-node]: https://babeljs.io/docs/en/babel-node
 [babel]: https://babeljs.io/
 [eslint]: https://eslint.org/
+
+**Other Dependencies:**
+
+- [create-react-app]
+- [react]
+- [electron]
+
 [create-react-app]: https://facebook.github.io/create-react-app/
+[react]: https://reactjs.org/
+[electron]: https://electronjs.org/
 
 **Vscode Extensions:**
 
@@ -184,7 +140,7 @@ javascript files! It's up to you to make it less restrictive if you want. Check
 - [vscode-typescript-tslint-plugin]
 - [code-runner]
 - [jest-snapshot-language-support]
-- [ESLint][eslint-vscode]
+- [eslint][eslint-vscode]
 - [code-spell-checker]
 - [markdown-checkbox]
 
@@ -198,10 +154,16 @@ javascript files! It's up to you to make it less restrictive if you want. Check
 [code-spell-checker]: https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
 [markdown-checkbox]: https://marketplace.visualstudio.com/items?itemName=bierner.markdown-checkbox
 
-**Guides, references:**
+**Guides, docs, references:**
 
 - [snapshot-testing]
 - [inline-snapshots]
+- [yarn workspaces][workspaces]
+- [webpack]
+- [monorepo (wikipedia)][monorepo]
 
 [snapshot-testing]: https://jestjs.io/docs/en/snapshot-testing
 [inline-snapshots]: https://jestjs.io/docs/en/snapshot-testing#inline-snapshots
+[workspaces]: https://yarnpkg.com/lang/en/docs/workspaces/
+[webpack]: https://webpack.js.org/
+[monorepo]: https://en.wikipedia.org/wiki/Monorepo
