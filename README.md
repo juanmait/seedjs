@@ -1,6 +1,6 @@
 # SeedJS
 
-changeA scaffolding _[monorepo]_ that showcases a myriad of different setups to
+A scaffolding _[monorepo]_ that showcases a myriad of different setups to
 develop javascript apps and libraries. It comes in different _flavors_ organized
 in [workspaces], all of them for different purposes, setups, runtimes and/or
 platforms:
