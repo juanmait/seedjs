@@ -1,4 +1,8 @@
-# 2019-02-17 (monorepo kick-off)
+# 2019-02-17 (next)
+
+- fix typos in `seed-lib-agnostic` readme
+
+# 1.0.0-beta.1 (2019-02-17 - monorepo kick-off)
 
 - update main readme to show latest changes about monorepo kick-off
 - rename workspace _seed-lib_ to _seed-lib-agnostic_

@@ -6,8 +6,8 @@ nodejs and the browser, but without using native APIs.
 ## Use Cases
 
 This are the _ideal_ use cases. As such, not always will be posible to stay
-_aligned_. So some of the restrictions can be easily disabled via configuring
-eslint, tsconfig and or installing the desired @types.
+_aligned_. Some of the restrictions can be easily disabled via configuring
+eslint, tsconfig and/or installing the desired @types.
 
 1. _**Agnostic libraries**_ that _should_ NOT call native APIs at all, neither
    from Nodejs or the browser.
@@ -15,8 +15,8 @@ eslint, tsconfig and or installing the desired @types.
    the kind of environment in which they are running. E.g.:
    ```js
    if (window && window.localStorage) {
-     /* we know that we're running on the browser.. */
-     /* do something without calling any native APIs */
+     // now we know that we're running on the browser..
+     // do something without calling any native APIs
    }
    ```
 3. Libraries that based on the info from point **2**, decides to use a nodejs
@@ -56,8 +56,10 @@ const isProd = process.env.NODE_ENV === 'production'
 const isProd = true
 ```
 
-Envs can be given via command line when launching babel like
-`NODE_ENV=development babel babel src --out-dir build ...`
+Envs can be given via command line when launching babel to build the source
+code:
+
+    NODE_ENV=development babel src --out-dir build ...
 
 ## Available Scripts
 
@@ -70,8 +72,8 @@ $ yarn build
 # build for prod (will run `prebuild` automatically). This does not minify the
 # output, does not make dead code elimination and does not bundle your files in
 # one single chunk of code. If the thing you're building that use this library
-# runs on nodejs, then minification or bundling have no sense. In the other hand
-# the app you're building that is using this library will run in the browser,
+# runs on nodejs, minification or bundling have no sense. In the other hand if
+# the thing you're building that is using this library will run in the browser,
 # then minification and bundling is the responsibility of the bundling tool that
 # you may use when releasing to production (e.g: webpack, parcel, rollup,
 # create-react-app).
