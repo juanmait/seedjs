@@ -9,7 +9,7 @@ platforms:
 | -------- | ---------------------- | --------------------------------------------------------------------------------------------------- |
 | **done** | `electron-react-basic` | showcases a setup to work with [react] in [electron] without using [create-react-app] or [webpack]. |
 | **done** | `lib-agnostic`         | libs targeting nodejs and/or the browser without using native APIs                                  |
-| todo     | `lib`                  | libs targeting nodejs and the browser with _free_ access to native APIs of both sides               |
+| todo     | `lib`                  | libs targeting nodejs and the browser with _free_ access to native APIs on both sides               |
 | todo     | `lib-node`             | Libs targeting NodeJS only                                                                          |
 | todo     | `lib-browser`          | Libs targeting the browser only                                                                     |
 | **done** | `process`              | NodeJS _long-running_ processes (like an HTTP server)                                               |
@@ -46,6 +46,15 @@ All the setups above includes:
 - Easy configurable GIT Hooks to make testing, linting, type checking, code
   fixing, code formatting, etc..
 
+## Get started
+
+```bash
+$ yarn install
+```
+
+Install all dependencies for all workspaces in the root folder. Check the readme
+in the corresponding folder to know more.
+
 ## Recommended vscode extensions:
 
 All the _flavors_ works better with this specific vscode plugins/extensions:
@@ -54,19 +63,13 @@ All the _flavors_ works better with this specific vscode plugins/extensions:
   `.json`, etc..) with one simple shortcut on the IDE.
 - [eslint-vscode] - show linting errors in javascript files.
 - [vscode-typescript-tslint-plugin] - show linting errors in typescript files.
-- [code-runner] - used to run the current open file in the IDE (will run
-  [babel-node] for regular files and [jest] for test files).
+- [code-runner] - runs the current open file in the IDE (use [babel-node] for
+  regular files and [jest] for test files).
 - [jest-snapshot-language-support] - add syntax highlighting for your Jest
   [snapshots][snapshot-testing].
 - [markdown-checkbox] - add support for github checkboxes when previewing `.md`
   files.
 - [code-spell-checker] ... yes! please!?
-
-## Development
-
-```bash
-$ yarn install
-```
 
 ## Vscode shortcuts reference:
 

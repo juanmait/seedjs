@@ -1,5 +1,6 @@
 # 2019-02-17 (next)
 
+- update main readme
 - fix typos in `seed-lib-agnostic` readme
 
 # 1.0.0-beta.1 (2019-02-17 - monorepo kick-off)
