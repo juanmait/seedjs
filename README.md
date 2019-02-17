@@ -21,6 +21,10 @@ to make those distinctions visible and clear, to share dependencies and
 versions, to get a predictable development environment and a nice DX in visual
 studio code.
 
+Aside from that, the workspaces are totally independent from each other, meaning
+that outside this monorepo every one should work just fine as any other normal
+package.
+
 ## Features
 
 All the setups above includes:
