@@ -1,0 +1,24 @@
+// This file is not required for this project to work properly or to compile
+// anything. It's only used by the vscode plugin "code-runner" in conjunction
+// with "@babel/node" to run the current file when you hit ctrl+alt+n in visual
+// studio code
+{
+  "presets": [
+    [
+      "react-app",
+      {
+        "flow": false,
+        "typescript": true
+      }
+    ],
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
+  "plugins": ["react-require"]
+}

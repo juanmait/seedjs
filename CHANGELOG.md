@@ -1,5 +1,6 @@
 # 2019-02-17 (monorepo kick-off)
 
+- add workspace _seed-react-app_
 - prefix all workspaces with `"seed-*"`
 - add workspace _lib-node_
 - add workspace _lib_
