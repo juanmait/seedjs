@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": ["eslint:recommended", "prettier"],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "impliedStrict": true,
+    "allowImportExportEverywhere": false
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.test.js",
+        "*.spec.js",
+        "__test__/**/*.js"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}
