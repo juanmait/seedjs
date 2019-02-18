@@ -1,5 +1,6 @@
 # 2019-02-18 (next)
 
+- add "newLine": "lf" in tsconfig.compilerOptions
 - add `typings` folder the `include` key on all `tsconfig.json` files
 - add `"build"` to the list of exclude in all `tsconfig.json` files
 

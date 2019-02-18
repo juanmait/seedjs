@@ -14,7 +14,6 @@
     "checkJs": true,
     // "jsx": "react",
     "declaration": false,
-    "newLine": "lf",
 
     /**
      * make go-to-definition on a declaration from a .d.ts file go to the source
@@ -62,7 +61,7 @@
     // "inlineSourceMap": true,
     // "inlineSources": true,
     "experimentalDecorators": false,
-    "emitDecoratorMetadata": false
+    "emitDecoratorMetadata": false,
   },
   "include": ["src/**/*", "typings/**/*.d.ts"],
   "exclude": [
