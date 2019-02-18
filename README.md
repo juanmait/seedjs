@@ -5,25 +5,31 @@ develop javascript apps and libraries. It comes in different _flavors_ organized
 in [workspaces], all of them for different purposes, setups, runtimes and/or
 platforms:
 
-| status   | branch                 | description                                                                                         |
-| -------- | ---------------------- | --------------------------------------------------------------------------------------------------- |
-| **done** | `electron-react-basic` | showcases a setup to work with [react] in [electron] without using [create-react-app] or [webpack]. |
-| **done** | `lib-agnostic`         | libs targeting nodejs and/or the browser without using native APIs                                  |
-| todo     | `lib`                  | libs targeting nodejs and the browser with _free_ access to native APIs on both sides               |
-| todo     | `lib-node`             | Libs targeting NodeJS only                                                                          |
-| todo     | `lib-browser`          | Libs targeting the browser only                                                                     |
-| **done** | `process`              | NodeJS _long-running_ processes (like an HTTP server)                                               |
-| **done** | `react-app`            | Frontend React Apps based on [create-react-app] (no ejected)                                        |
+| status   | branch                 | description                                                                            |
+| -------- | ---------------------- | -------------------------------------------------------------------------------------- |
+| **done** | `electron-react-basic` | setup to work with [react] in [electron] without using [create-react-app] or [webpack] |
+| **done** | `lib-agnostic`         | libs targeting nodejs and/or the browser without using native APIs                     |
+| todo     | `lib`                  | libs targeting nodejs and the browser with _free_ access to native APIs on both sides  |
+| todo     | `lib-node`             | Libs targeting NodeJS only                                                             |
+| todo     | `lib-browser`          | Libs targeting the browser only                                                        |
+| **done** | `process`              | NodeJS _long-running_ processes (like an HTTP server)                                  |
+| **done** | `react-app`            | Frontend React Apps based on [create-react-app] (no ejected)                           |
 
 Most of the time, the differences between setups are very subtle, only changing
-some linting config, babel plugin or dependency. The main goal of all of this is
-to make those distinctions visible and clear, to share dependencies and
-versions, to get a predictable development environment and a nice DX in visual
-studio code.
+some linting config, babel plugin or dependency.
 
-Aside from that, the workspaces are totally independent from each other, meaning
+The main goal of all of this is to make those distinctions visible and clear, to
+share dependencies keeping track of version upgrades, to implicitly suggest a
+unified set of _best practice's rules_ via linting, type checking, code
+formating and git hooks, to get a predictable and unified development
+environment with a nice DX, and with first class support in visual studio code
+(actually you can use whatever IDE you want since most IDEs takes the info they
+need by reading files like `package.json`, `.eslintrc`, `tsconfig.json` and so
+on).
+
+Aside from that, all workspaces are totally independent from each other, meaning
 that outside this monorepo every one should work just fine as any other normal
-package.
+package do.
 
 ## Features
 
@@ -53,7 +59,7 @@ $ yarn install
 ```
 
 Install all dependencies for all workspaces in the root folder. Check the readme
-in the corresponding folder to know more.
+in the corresponding folder to know more about the specifics of every package.
 
 ## Recommended vscode extensions:
 
@@ -92,7 +98,8 @@ after the auto fixing. It uses [husky] and [lint-staged] for that.
 
 Use [jest] for tests.
 
-- Test can be written in typescript or ES2018. [inline-snapshots] are also supported!
+- Test can be written in typescript or ES2018. [inline-snapshots] are also
+  supported!
 - You can run the current test file in the IDE with `ctrl+alt+n`. No need for
   compile.
 

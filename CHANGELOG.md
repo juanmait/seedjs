@@ -1,5 +1,6 @@
 # 2019-02-17 (next)
 
+- improve _main goals_ info in the main readme
 - update main readme
 - fix typos in `seed-lib-agnostic` readme
 
