@@ -15,14 +15,14 @@ platforms:
 | **done** | `process`              | NodeJS _long-running_ processes (like an HTTP server)                                  |
 | **done** | `react-app`            | Frontend React Apps based on [create-react-app] (no ejected)                           |
 
-Most of the time, the differences between setups are very subtle, only changing
+Most of the time, differences between setups are very subtle, only changing
 some linting config, babel plugin or dependency.
 
 The main goal of all of this is to make those distinctions visible and clear, to
 share dependencies keeping track of version upgrades, to implicitly suggest a
 unified set of _best practice's rules_ via _separation of concerns_, linting,
 type checking, code formating and git hooks, to get a predictable and unified
-development environment with a nice DX, and with first class support in visual
+development environment with a nice DX, and first class support in visual
 studio code (actually you can use whatever IDE you want since most IDEs takes
 the info they need by reading files like `package.json`, `.eslintrc`,
 `tsconfig.json` and so on).
