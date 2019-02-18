@@ -89,7 +89,7 @@ All the _flavors_ works better with this specific vscode plugins/extensions:
 
 ## Git Hooks
 
-All the branches includes a _pre-commit_ hook that runs `fix`, `lint` and
+All the setups includes a _pre-commit_ hook that runs `fix`, `lint` and
 `checkTypes` in your **staged files** to check for errors and auto fix them when
 possible before commits. It will **abort** the commit phase if errors prevails
 after the auto fixing. It uses [husky] and [lint-staged] for that.
