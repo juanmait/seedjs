@@ -107,9 +107,9 @@ Read the README in the branch of your choice to know more.
 
 ## Typescript
 
-The typescript configuration is very strict and types are checked even in
-javascript files! It's up to you to make it less restrictive if you want. Check
-`tsconfig.json`.
+In all cases the typescript configuration is very very strict. Types are checked
+even in javascript files! It's up to you to make it less restrictive if you
+want. Check the `tsconfig.json` in the respective workspace.
 
 ---
 
