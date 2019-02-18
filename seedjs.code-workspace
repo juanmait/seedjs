@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "seed-electron-react-basic"
+		},
+		{
+			"path": "seed-lib-agnostic"
+		},
+		{
+			"path": "seed-lib-browser"
+		},
+		{
+			"path": "seed-lib-node"
+		},
+		{
+			"path": "seed-process"
+		},
+		{
+			"path": "seed-react-app"
+		}
+	],
+  "settings": {}
+}
