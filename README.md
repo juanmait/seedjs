@@ -20,12 +20,12 @@ some linting config, babel plugin or dependency.
 
 The main goal of all of this is to make those distinctions visible and clear, to
 share dependencies keeping track of version upgrades, to implicitly suggest a
-unified set of _best practice's rules_ via linting, type checking, code
-formating and git hooks, to get a predictable and unified development
-environment with a nice DX, and with first class support in visual studio code
-(actually you can use whatever IDE you want since most IDEs takes the info they
-need by reading files like `package.json`, `.eslintrc`, `tsconfig.json` and so
-on).
+unified set of _best practice's rules_ via _separation of concerns_, linting,
+type checking, code formating and git hooks, to get a predictable and unified
+development environment with a nice DX, and with first class support in visual
+studio code (actually you can use whatever IDE you want since most IDEs takes
+the info they need by reading files like `package.json`, `.eslintrc`,
+`tsconfig.json` and so on).
 
 Aside from that, all workspaces are totally independent from each other, meaning
 that outside this monorepo every one should work just fine as any other normal
