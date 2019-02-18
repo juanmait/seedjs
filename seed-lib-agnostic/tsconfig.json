@@ -64,7 +64,7 @@
     "experimentalDecorators": false,
     "emitDecoratorMetadata": false
   },
-  "include": ["src/**/*", "typings/**/*"],
+  "include": ["src/**/*", "typings/**/*.d.ts"],
   "exclude": [
     "build",
     "node_modules",
