@@ -1,3 +1,7 @@
+# 2019-02-18 (next)
+
+- add `"build"` to the list of exclude in all `tsconfig.json` files
+
 # 2019-02-17 (next)
 
 - add more info about typescript strict mode in main readme
