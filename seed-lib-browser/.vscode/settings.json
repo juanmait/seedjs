@@ -1,0 +1,31 @@
+{
+  "code-runner.runInTerminal": true,
+  "code-runner.showExecutionMessage": false,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.executorMapByGlob": {
+    "*.(test|spec).(j|t)(sx|s)": "yarn test",
+    "*.(j|t)(sx|s)": "NODE_ENV=development BABEL_ENV=development node_modules/.bin/babel-node --extensions \".ts,.js,.tsx,.jsx,.svg,.css\""
+  },
+  "code-runner.ignoreSelection": true,
+  "code-runner.preserveFocus": true,
+  "code-runner.saveFileBeforeRun": true,
+  "prettier.requireConfig": true,
+  "prettier.tslintIntegration": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "dist": true,
+    "build": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "dist/**": true,
+    "build/**": true
+  },
+  "json.format.enable": true,
+  "prettier.eslintIntegration": true
+}
