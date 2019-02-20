@@ -5,15 +5,15 @@ develop javascript apps and libraries. It comes in different _flavors_ organized
 in [workspaces], all of them for different purposes, setups, runtimes and/or
 platforms:
 
-| status   | branch                 | description                                                                            |
-| -------- | ---------------------- | -------------------------------------------------------------------------------------- |
-| **done** | `electron-react-basic` | setup to work with [react] in [electron] without using [create-react-app] or [webpack] |
-| **done** | `lib-agnostic`         | libs targeting nodejs and/or the browser without using native APIs                     |
-| todo     | `lib`                  | libs targeting nodejs and the browser with _free_ access to native APIs on both sides  |
-| todo     | `lib-node`             | Libs targeting NodeJS only                                                             |
-| todo     | `lib-browser`          | Libs targeting the browser only                                                        |
-| **done** | `process`              | NodeJS _long-running_ processes (like an HTTP server)                                  |
-| **done** | `react-app`            | Frontend React Apps based on [create-react-app] (no ejected)                           |
+| branch                 | description                                                                            |
+| ---------------------- | -------------------------------------------------------------------------------------- |
+| `electron-react-basic` | setup to work with [react] in [electron] without using [create-react-app] or [webpack] |
+| `lib-agnostic`         | libs targeting nodejs and/or the browser without using native APIs                     |
+| `lib`                  | libs targeting nodejs and the browser with _free_ access to native APIs on both sides  |
+| `lib-node`             | Libs targeting NodeJS only                                                             |
+| `lib-browser`          | Libs targeting the browser only                                                        |
+| `process`              | NodeJS _long-running_ processes (like an HTTP server)                                  |
+| `react-app`            | Frontend React Apps based on [create-react-app] (no ejected)                           |
 
 Most of the time, differences between setups are very subtle, only changing
 some linting config, babel plugin or dependency.
