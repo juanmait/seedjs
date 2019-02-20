@@ -1,4 +1,4 @@
-# 2019-02-20 (next)
+# 1.0.0-beta.2 (2019-02-20 - upgrade dependencies and docs)
 
 - upgrade dependency versions and regenerate yarn.lock
 
