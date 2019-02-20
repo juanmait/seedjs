@@ -1,3 +1,7 @@
+# 2019-02-20 (next)
+
+- upgrade dependency versions and regenerate yarn.lock
+
 # 2019-02-19 (next)
 
 - make git to not ignore .vscode stuff
