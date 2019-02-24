@@ -43,7 +43,7 @@
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-typescript": "^7.3.3",
     "@types/jest": "^24.0.6",
-    "@types/node": "^11.9.4",
+    "@types/node": "^11.9.5",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.1.0",
     "concurrently": "^4.1.0",
@@ -55,9 +55,9 @@
     "prettier": "^1.16.4",
     "prettier-eslint-cli": "^4.7.1",
     "prettier-tslint": "^0.4.2",
-    "tslint": "^5.12.1",
+    "tslint": "^5.13.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.3.3"
+    "typescript": "^3.3.3333"
   },
   "dependencies": {},
   "husky": {
