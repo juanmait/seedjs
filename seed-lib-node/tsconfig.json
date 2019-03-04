@@ -62,6 +62,7 @@
     // "inlineSources": true,
     "experimentalDecorators": false,
     "emitDecoratorMetadata": false,
+    "newLine": "lf"
   },
   "include": ["src/**/*", "typings/**/*.d.ts"],
   "exclude": [
