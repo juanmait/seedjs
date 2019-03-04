@@ -1,4 +1,6 @@
 {
+  // see `compilerOptions` at:
+  // https://www.typescriptlang.org/docs/handbook/compiler-options.html
   "compilerOptions": {
     // see: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#new---skiplibcheck
     "skipLibCheck": true,
@@ -48,7 +50,7 @@
     "noImplicitReturns": true,
     // "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
-    // "baseUrl": "./",
+    // "baseUrl": "./src",
     // "paths": {},
     // "typeRoots": [],
     // "types": [],

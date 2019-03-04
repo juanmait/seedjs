@@ -1,3 +1,7 @@
+# 1.0.0-beta.4 (2019-03-04 - upgrade dependencies)
+
+- upgrade dependencies and regenerate yarn.lock
+
 # 1.0.0-beta.3 (2019-02-24 - upgrade dependencies)
 
 - upgrade react and typescript versions
