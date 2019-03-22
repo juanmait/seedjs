@@ -1,3 +1,7 @@
+# 1.0.0-beta.5 (2019-03-18 - upgrade dependencies)
+
+- upgrade dependencies and regenerate yarn.lock
+
 # 1.0.0-beta.4 (2019-03-04 - upgrade dependencies)
 
 - upgrade dependencies and regenerate yarn.lock
