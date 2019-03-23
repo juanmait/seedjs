@@ -12,7 +12,7 @@
   "prettier.requireConfig": true,
   "prettier.tslintIntegration": true,
   "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
+  "editor.formatOnPaste": false,
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
