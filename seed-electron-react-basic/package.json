@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=development electron --require ./script/register.js src/main/index.ts",
     "watch": "yarn compile --watch",
-    "compile": "NODE_ENV=production babel src --out-dir build --extensions '.ts,.js,.jsx,.tsx,.svg' --ignore 'src/**/*.spec.ts,src/**/*.spec.js,src/**/*.test.ts,src/**/*.test.js'",
+    "compile": "NODE_ENV=production babel src --out-dir build --extensions '.ts,.js,.jsx,.tsx,.svg' --ignore 'src/**/*.spec.ts,src/**/*.spec.js,src/**/*.test.ts,src/**/*.test.js,src/eslint-no-cry.js'",
     "build": "yarn compile",
     "test": "yarn jest",
     "prebuild": "yarn clean; yarn fix && yarn lint && yarn checkTypes",

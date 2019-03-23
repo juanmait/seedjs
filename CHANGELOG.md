@@ -1,5 +1,7 @@
 # 2019-03-22
 
+- fix #6 exclude eslint-no-cry.js file from the build process
+- fix #9 disable vscode setting formatOnPaste
 - upgrade dependencies and regenerate yarn.lock
 - remove unnecessary `.vscode` dir in the project root
 
