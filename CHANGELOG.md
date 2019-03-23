@@ -1,5 +1,6 @@
 # 2019-03-22
 
+- upgrade dependencies and regenerate yarn.lock
 - remove unnecessary `.vscode` dir in the project root
 
 # 1.0.0-beta.5 (2019-03-18 - upgrade dependencies)

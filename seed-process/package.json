@@ -36,14 +36,14 @@
   ],
   "devDependencies": {
     "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.4",
+    "@babel/core": "^7.4.0",
     "@babel/node": "^7.2.2",
-    "@babel/plugin-proposal-class-properties": "^7.3.4",
-    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
     "@babel/preset-typescript": "^7.3.3",
     "@types/jest": "^24.0.11",
-    "@types/node": "^11.11.3",
+    "@types/node": "^11.11.6",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.5.0",
     "concurrently": "^4.1.0",
@@ -57,7 +57,7 @@
     "prettier-tslint": "^0.4.2",
     "tslint": "^5.14.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.3.3333"
+    "typescript": "^3.3.4000"
   },
   "dependencies": {},
   "husky": {
