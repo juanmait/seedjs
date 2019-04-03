@@ -1,3 +1,19 @@
+# 2019-04-03
+
+- upgrade dependency versions:
+  ```
+  @babel/cli                                    ^7.2.3  →    ^7.4.3
+  @babel/core                                   ^7.4.0  →    ^7.4.3
+  @babel/plugin-proposal-object-rest-spread     ^7.4.0  →    ^7.4.3
+  @babel/preset-env                             ^7.4.2  →    ^7.4.3
+  @types/node                                 ^11.11.6  →  ^11.13.0
+  babel-jest                                   ^24.5.0  →   ^24.7.0
+  eslint                                       ^5.15.3  →   ^5.16.0
+  jest                                         ^24.5.0  →   ^24.7.0
+  tslint                                       ^5.14.0  →   ^5.15.0
+  typescript                                 ^3.3.4000  →    ^3.4.1
+  ```
+
 # 2019-02-14
 
 - update readme to direct the user to [doc/wiki.process.md](doc/wiki.process.md)

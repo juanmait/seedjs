@@ -1,3 +1,95 @@
+# 2019-04-03
+
+- regenerate `yarn.lock` file
+- upgrade dependency versions
+  ```
+  seed-lib-browser
+  -----------------
+  @babel/cli                                    ^7.2.3  →   ^7.4.3
+  @babel/core                                   ^7.4.0  →   ^7.4.3
+  @babel/plugin-proposal-object-rest-spread     ^7.4.0  →   ^7.4.3
+  @babel/preset-env                             ^7.4.2  →   ^7.4.3
+  babel-jest                                   ^24.5.0  →  ^24.7.0
+  eslint                                       ^5.15.3  →  ^5.16.0
+  jest                                         ^24.5.0  →  ^24.7.0
+  tslint                                       ^5.14.0  →  ^5.15.0
+  typescript                                 ^3.3.4000  →   ^3.4.1
+
+  seed-lib-agnostic
+  -----------------
+  @babel/cli                                    ^7.2.3  →   ^7.4.3
+  @babel/core                                   ^7.4.0  →   ^7.4.3
+  @babel/plugin-proposal-object-rest-spread     ^7.4.0  →   ^7.4.3
+  @babel/preset-env                             ^7.4.2  →   ^7.4.3
+  babel-jest                                   ^24.5.0  →  ^24.7.0
+  eslint                                       ^5.15.3  →  ^5.16.0
+  jest                                         ^24.5.0  →  ^24.7.0
+  tslint                                       ^5.14.0  →  ^5.15.0
+  typescript                                 ^3.3.4000  →   ^3.4.1
+
+  seed-electron-react-basic
+  -------------------------
+  react                                        ^16.8.5  →   ^16.8.6
+  react-dom                                    ^16.8.5  →   ^16.8.6
+  @babel/cli                                    ^7.2.3  →    ^7.4.3
+  @babel/core                                   ^7.4.0  →    ^7.4.3
+  @babel/plugin-proposal-object-rest-spread     ^7.4.0  →    ^7.4.3
+  @babel/preset-env                             ^7.4.2  →    ^7.4.3
+  @babel/runtime                                ^7.4.2  →    ^7.4.3
+  @types/node                                 ^11.11.6  →  ^11.13.0
+  @types/react                                 ^16.8.8  →  ^16.8.12
+  babel-jest                                   ^24.5.0  →   ^24.7.0
+  electron                                       4.1.0  →     4.1.3
+  eslint                                       ^5.15.3  →   ^5.16.0
+  eslint-plugin-flowtype                        ^3.4.2  →    ^3.5.1
+  jest                                         ^24.5.0  →   ^24.7.0
+  tslint                                       ^5.14.0  →   ^5.15.0
+  typescript                                 ^3.3.4000  →    ^3.4.1
+
+  seed-lib-node
+  --------------
+  @babel/cli                                    ^7.2.3  →    ^7.4.3
+  @babel/core                                   ^7.4.0  →    ^7.4.3
+  @babel/plugin-proposal-object-rest-spread     ^7.4.0  →    ^7.4.3
+  @babel/preset-env                             ^7.4.2  →    ^7.4.3
+  @types/node                                 ^11.11.6  →  ^11.13.0
+  babel-jest                                   ^24.5.0  →   ^24.7.0
+  eslint                                       ^5.15.3  →   ^5.16.0
+  jest                                         ^24.5.0  →   ^24.7.0
+  tslint                                       ^5.14.0  →   ^5.15.0
+  typescript                                 ^3.3.4000  →    ^3.4.1
+
+  seed-process
+  ------------
+  @babel/cli                                    ^7.2.3  →    ^7.4.3
+  @babel/core                                   ^7.4.0  →    ^7.4.3
+  @babel/plugin-proposal-object-rest-spread     ^7.4.0  →    ^7.4.3
+  @babel/preset-env                             ^7.4.2  →    ^7.4.3
+  @types/node                                 ^11.11.6  →  ^11.13.0
+  babel-jest                                   ^24.5.0  →   ^24.7.0
+  eslint                                       ^5.15.3  →   ^5.16.0
+  jest                                         ^24.5.0  →   ^24.7.0
+  tslint                                       ^5.14.0  →   ^5.15.0
+  typescript                                 ^3.3.4000  →    ^3.4.1
+
+  seed-react-app
+  --------------
+  react                                        ^16.8.5  →   ^16.8.6
+  react-dom                                    ^16.8.5  →   ^16.8.6
+  @babel/cli                                    ^7.2.3  →    ^7.4.3
+  @babel/core                                   ^7.4.0  →    ^7.4.3
+  @babel/plugin-proposal-object-rest-spread     ^7.4.0  →    ^7.4.3
+  @babel/preset-env                             ^7.4.2  →    ^7.4.3
+  @types/node                                 ^11.11.6  →  ^11.13.0
+  @types/react                                 ^16.8.8  →  ^16.8.12
+  babel-jest                                   ^24.5.0  →   ^24.7.0
+  eslint                                       ^5.15.3  →   ^5.16.0
+  eslint-plugin-flowtype                        ^3.4.2  →    ^3.5.1
+  jest                                         ^24.5.0  →   ^24.7.0
+  tslint                                       ^5.14.0  →   ^5.15.0
+  typescript                                 ^3.3.4000  →    ^3.4.1
+  ```
+
 # 2019-03-22
 
 - fix #6 exclude eslint-no-cry.js file from the build process
