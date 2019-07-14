@@ -14,7 +14,7 @@
     "checkConflicts": "yarn checkEslint",
     "checkEslint": "eslint --print-config .eslint.json | eslint-config-prettier-check",
     "lint": "eslint 'src/**/*.+(js|ts)'",
-    "fix": "prettier-eslint 'src/**/*.js' --write",
+    "fix": "prettier-eslint 'src/**/*.+(js|ts)' --write",
     "clean": "rm -rf build"
   },
   "engines": {

@@ -4,14 +4,9 @@
 - upgrade all packages dependencies & regenerate main `yarn.lock` file
 
 ## seed-electron-react-basic
-
-- deprecate tslint in favor of eslint for typescript linting
-
 ## seed-lib-browser
-
-- deprecate tslint in favor of eslint for typescript linting
-
 ## seed-lib-agnostic
+## seed-lib-node
 
 - deprecate tslint in favor of eslint for typescript linting
 
