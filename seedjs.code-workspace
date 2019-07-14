@@ -27,6 +27,9 @@
       "seed-*": true,
       "eslint-config-react-app-fix-override": true
     },
-    "cSpell.words": ["unmount"]
+    "cSpell.words": [
+      "envs",
+      "unmount"
+    ]
   }
 }

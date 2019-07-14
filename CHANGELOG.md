@@ -7,6 +7,11 @@
 
 - deprecate tslint in favor of eslint for typescript linting
 
+## seed-lib-browser
+
+- deprecate tslint in favor of eslint for typescript linting
+
+
 [eslint-config-react]: https://www.npmjs.com/package/eslint-config-react-app
 
 # 2019-04-03
