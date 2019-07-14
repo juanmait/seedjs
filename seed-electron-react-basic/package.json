@@ -11,7 +11,7 @@
     "compile": "NODE_ENV=production babel src --out-dir build --extensions '.ts,.js,.jsx,.tsx,.svg' --ignore 'src/**/*.spec.ts,src/**/*.spec.js,src/**/*.test.ts,src/**/*.test.js,src/eslint-no-cry.js'",
     "fix": "prettier-eslint 'src/**/*.+(js|jsx|ts|tsx)' --write",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
-    "prebuild": "yarn clean; yarn fix && yarn lint && yarn checkTypes",
+    "prebuild": "yarn clean; yarn fix && yarn lint && yarn checktypes",
     "start": "NODE_ENV=development electron --require ./script/register.js src/main/index.ts",
     "test": "yarn jest",
     "watch": "yarn compile --watch"
