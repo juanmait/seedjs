@@ -1,3 +1,14 @@
+# 2019-07-14
+
+- add package `eslint-config-react-app-fix-override` to fix [eslint-config-react]
+- upgrade all packages dependencies & regenerate main `yarn.lock` file
+
+## seed-electron-react-basic
+
+- deprecate tslint in favor of eslint for typescript linting
+
+[eslint-config-react]: https://www.npmjs.com/package/eslint-config-react-app
+
 # 2019-04-03
 
 - regenerate `yarn.lock` file

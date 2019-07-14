@@ -1,8 +1,5 @@
 {
-	"folders": [
-    {
-      "path": "."
-    },
+  "folders": [
     {
       "path": "seed-electron-react-basic"
     },
@@ -20,11 +17,16 @@
     },
     {
       "path": "seed-react-app"
+    },
+    {
+      "path": "."
     }
   ],
   "settings": {
     "files.exclude": {
-      "seed-*": true
-    }
+      "seed-*": true,
+      "eslint-config-react-app-fix-override": true
+    },
+    "cSpell.words": ["unmount"]
   }
 }

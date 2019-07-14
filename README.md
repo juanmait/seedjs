@@ -31,6 +31,9 @@ Aside from that, all workspaces are totally independent from each other, meaning
 that outside this monorepo every one should work just fine as any other normal
 package do.
 
+**IMPORTANT: There is a pre-configured vscode workspace (`seedjs.code-workspace`).
+It is very recommended to use this workspace in order to have propped linting in the IDE!**
+
 ## Features
 
 All the setups above includes:

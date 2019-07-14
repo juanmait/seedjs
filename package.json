@@ -1,7 +1,8 @@
 {
   "private": true,
   "workspaces": [
-    "seed-*"
+    "seed-*",
+    "eslint-config-react-app-fix-override"
   ],
   "scripts": {
     "reinstall": "yarn rmNodeModules && yarn rmLock && yarn install",
