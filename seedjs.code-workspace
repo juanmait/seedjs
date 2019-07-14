@@ -28,7 +28,9 @@
       "eslint-config-react-app-fix-override": true
     },
     "cSpell.words": [
+      "checktypes",
       "envs",
+      "prebuild",
       "unmount"
     ]
   }
