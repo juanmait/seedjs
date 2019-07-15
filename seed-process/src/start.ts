@@ -7,13 +7,13 @@ interface Options {
 }
 
 export function start({ port }: Options) {
-  return new Promise<Server>((resolve, reject) => {
-    server.listen(port, (err: Error) => {
-      if (err) {
-        return reject(err)
-      }
+  return new Promise<Server>((resolve, _reject) => {
+    server.on('error', error => {
+      console.error(error)
+    })
+    server.listen(port, () => {
       const addr = server.address() as AddressInfo
-      console.log('server listening on port', addr.port) //tslint:disable-line
+      console.log('server listening on port', addr.port)
       resolve(server)
     })
   })

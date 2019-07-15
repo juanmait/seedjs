@@ -25,7 +25,7 @@
   "settings": {
     "files.exclude": {
       "seed-*": true,
-      "eslint-config-react-app-fix-override": true
+      "eslint-config-react-app-fix-override": false
     },
     "cSpell.words": [
       "checktypes",

@@ -10,6 +10,7 @@
   "code-runner.preserveFocus": true,
   "code-runner.saveFileBeforeRun": true,
   "prettier.requireConfig": true,
+  "prettier.eslintIntegration": false,
   "prettier.tslintIntegration": true,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
@@ -26,6 +27,8 @@
     "dist/**": true,
     "build/**": true
   },
-  "json.format.enable": true,
-  "prettier.eslintIntegration": true
+  "eslint.validate": [
+    "javascript",
+    { "language": "typescript", "autoFix": true }
+  ]
 }

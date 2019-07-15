@@ -38,6 +38,7 @@
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-typescript": "^7.3.3",
     "@types/jest": "^24.0.15",
+    "@typescript-eslint/parser": "^1.12.0",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
     "babel-plugin-transform-inline-environment-variables": "^0.4.3",
