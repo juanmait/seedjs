@@ -1,11 +1,18 @@
+# 2019-07-15
+
+- rename all `.eslintrc.json` files to `.eslintrc.js`
+
 # 2019-07-14
 
 - add package `eslint-config-react-app-fix-override` to fix [eslint-config-react]
 - upgrade all packages dependencies & regenerate main `yarn.lock` file
 
 ## seed-electron-react-basic
+
 ## seed-lib-browser
+
 ## seed-lib-agnostic
+
 ## seed-lib-node
 
 - deprecate tslint in favor of eslint for typescript linting
