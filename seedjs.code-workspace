@@ -30,12 +30,10 @@
       "seed-*": true,
       "eslint-config-react-app-fix-override": false
     },
-    "cSpell.words": [
-      "checktypes",
-      "envs",
-      "prebuild",
-      "unmount"
-    ],
-    "typescript.tsdk": "seedjs/node_modules/typescript/lib"
+    "cSpell.words": ["checktypes", "envs", "prebuild", "unmount"],
+    "typescript.tsdk": "seedjs/node_modules/typescript/lib",
+    "files.associations": {
+      "*.svelte": "html"
+    }
   }
 }

@@ -1,7 +1,12 @@
 # 2019-07-15
 
+- add seed-svelte-app from svelte [template-webpack]
+- add eslint support to seed-svelte-app using [eslint-plugin-svelte3]
 - fix all eslint configuration for ts files
 - rename all `.eslintrc.json` files to `.eslintrc.js`
+
+[template-webpack]:https://github.com/sveltejs/template-webpack
+[eslint-plugin-svelte3]:https://github.com/sveltejs/eslint-plugin-svelte3
 
 # 2019-07-14
 
