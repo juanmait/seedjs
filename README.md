@@ -14,6 +14,7 @@ platforms:
 | `lib-browser`          | Libs targeting the browser only                                                        |
 | `process`              | NodeJS _long-running_ processes (like an HTTP server)                                  |
 | `react-app`            | Frontend React Apps based on [create-react-app] (no ejected)                           |
+| `svelte-app`           | Frontend Svelte Apps with support for eslint and prettier                              |
 
 Most of the time, differences between setups are very subtle, only changing
 some linting config, babel plugin or dependency.
@@ -40,9 +41,9 @@ All the setups above includes:
 
 - The option to write code in typescript, ES2018 or both.
 - First class support in visual studio code:
-  - Linting on the IDE by using [tslint] and/or [eslint]
+  - Linting on the IDE by using [eslint] v6
   - Auto formating via [prettier] (support files like `.ts`, `.js`, `.tsx`,
-    `.jsx`, `.json`, `.md` and more).
+    `.jsx`, `.json`, `.md`, `.svelte` and more).
   - run the current file on the IDE with a simple shortcut without the need
     of compile ([babel-node] is used for regular files and [jest] for test
     files).
@@ -71,7 +72,7 @@ All the _flavors_ works better with this specific vscode plugins/extensions:
 - [prettier-vscode] - format almost all files (`.md`, `.js`, `.ts`, `.tsx`,
   `.json`, etc..) with one simple shortcut on the IDE.
 - [eslint-vscode] - show linting errors in javascript files.
-- [vscode-typescript-tslint-plugin] - show linting errors in typescript files.
+- [svelte-vscode] - syntax highlighting and rich intellisense for Svelte components.
 - [code-runner] - runs the current open file in the IDE (use [babel-node] for
   regular files and [jest] for test files).
 - [jest-snapshot-language-support] - add syntax highlighting for your Jest
@@ -122,18 +123,14 @@ want. Check the `tsconfig.json` in the respective workspace.
 
 - [prettier]
 - [eslint]
-- [tslint]
 - [jest]
 - [babel]
-- [tslint-config-prettier]
 - [husky]
 - [lint-staged]
 - [babel-node]
 - [prettier-eslint-cli]
 
-[tslint]: https://palantir.github.io/tslint/
 [prettier]: https://prettier.io/
-[tslint-config-prettier]: https://github.com/prettier/tslint-config-prettier
 [husky]: https://github.com/typicode/husky
 [lint-staged]: https://www.npmjs.com/package/lint-staged
 [jest]: https://jestjs.io/
@@ -146,15 +143,19 @@ want. Check the `tsconfig.json` in the respective workspace.
 - [create-react-app]
 - [react]
 - [electron]
+- [template-webpack]
+- [eslint-plugin-svelte3]
 
 [create-react-app]: https://facebook.github.io/create-react-app/
 [react]: https://reactjs.org/
 [electron]: https://electronjs.org/
+[template-webpack]: https://github.com/sveltejs/template-webpack
+[eslint-plugin-svelte3]: https://github.com/sveltejs/eslint-plugin-svelte3
 
 **Vscode Extensions:**
 
+- [svelte-vscode]
 - [prettier-vscode]
-- [vscode-typescript-tslint-plugin]
 - [code-runner]
 - [jest-snapshot-language-support]
 - [eslint][eslint-vscode]
@@ -162,14 +163,13 @@ want. Check the `tsconfig.json` in the respective workspace.
 - [markdown-checkbox]
 
 [prettier-vscode]: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
-[vscode-typescript-tslint-plugin]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin
 [code-runner]: https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
 [jest-snapshot-language-support]: https://marketplace.visualstudio.com/items?itemName=tlent.jest-snapshot-language-support
 [eslint-vscode]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 [prettier-eslint-cli]: https://github.com/prettier/prettier-eslint-cli
-[tslint]: https://palantir.github.io/tslint/
 [code-spell-checker]: https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
 [markdown-checkbox]: https://marketplace.visualstudio.com/items?itemName=bierner.markdown-checkbox
+[svelte-vscode]: https://marketplace.visualstudio.com/items?itemName=JamesBirtles.svelte-vscode
 
 **Guides, docs, references:**
 
