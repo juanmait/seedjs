@@ -10,8 +10,9 @@
   "code-runner.preserveFocus": true,
   "code-runner.saveFileBeforeRun": true,
   "prettier.requireConfig": true,
-  "prettier.tslintIntegration": true,
-  "editor.formatOnSave": true,
+  "prettier.eslintIntegration": true,
+  "prettier.tslintIntegration": false,
+  "editor.formatOnSave": false,
   "editor.formatOnPaste": false,
   "search.exclude": {
     "**/node_modules": true,
@@ -26,6 +27,10 @@
     "dist/**": true,
     "build/**": true
   },
-  "json.format.enable": true,
-  "prettier.eslintIntegration": true
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    { "language": "typescript", "autoFix": true },
+    { "language": "typescriptreact", "autoFix": true }
+  ]
 }

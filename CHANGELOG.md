@@ -1,7 +1,35 @@
+# 2019-07-15
+
+- add seed-svelte-app from svelte [template-webpack]
+- add eslint support to seed-svelte-app using [eslint-plugin-svelte3]
+- fix all eslint configuration for ts files
+- rename all `.eslintrc.json` files to `.eslintrc.js`
+
+[template-webpack]:https://github.com/sveltejs/template-webpack
+[eslint-plugin-svelte3]:https://github.com/sveltejs/eslint-plugin-svelte3
+
+# 2019-07-14
+
+- add package `eslint-config-react-app-fix-override` to fix [eslint-config-react]
+- upgrade all packages dependencies & regenerate main `yarn.lock` file
+
+## seed-electron-react-basic
+
+## seed-lib-browser
+
+## seed-lib-agnostic
+
+## seed-lib-node
+
+- deprecate tslint in favor of eslint for typescript linting
+
+[eslint-config-react]: https://www.npmjs.com/package/eslint-config-react-app
+
 # 2019-04-03
 
 - regenerate `yarn.lock` file
 - upgrade dependency versions
+
   ```
   seed-lib-browser
   -----------------

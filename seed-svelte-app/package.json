@@ -1,0 +1,22 @@
+{
+  "name": "seed-svelte-app",
+  "version": "1.0.0",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.0.0",
+    "eslint": "^6.0.1",
+    "eslint-plugin-svelte3": "^2.7.2",
+    "mini-css-extract-plugin": "^0.7.0",
+    "serve": "^11.1.0",
+    "style-loader": "^0.23.1",
+    "svelte": "^3.6.7",
+    "svelte-loader": "2.13.4",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "webpack-dev-server --content-base public"
+  }
+}

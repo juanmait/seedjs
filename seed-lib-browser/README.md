@@ -5,7 +5,7 @@ This setup is for development of libraries that should run on the browser
 
 ## Use Cases
 
-This are the _ideal_ use cases. As such, not always will be posible to stay
+This are the _ideal_ use cases. As such, not always will be possible to stay
 _aligned_. So some of the restrictions can be easily disabled via configuring
 eslint, tsconfig and or installing @types.
 
