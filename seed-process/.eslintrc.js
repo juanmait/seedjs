@@ -26,10 +26,10 @@ module.exports = {
   ],
   overrides: [
     {
+      files: ['*.ts'],
       env: {
         node: true,
       },
-      files: ['*.ts'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
         // This setting is required if you want to use rules which require type information

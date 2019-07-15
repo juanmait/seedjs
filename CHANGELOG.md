@@ -1,5 +1,6 @@
 # 2019-07-15
 
+- fix all eslint configuration for ts files
 - rename all `.eslintrc.json` files to `.eslintrc.js`
 
 # 2019-07-14
