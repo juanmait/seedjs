@@ -1,3 +1,7 @@
+# 2019-07-16
+
+- upgrade electron dependency
+
 # 2019-07-15
 
 - add seed-svelte-app from svelte [template-webpack]
