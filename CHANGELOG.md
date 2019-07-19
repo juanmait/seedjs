@@ -1,5 +1,6 @@
 # 2019-07-19
 
+- remove comments from `seed-react-app/tsconfig.json` as they are not supported.
 - upgrade all dependencies and regenerate `yarn.lock`
 - add new seed-webpack-bundle
 - add eslint & prettier support to seed-svelte-app
