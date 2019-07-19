@@ -1,5 +1,6 @@
 # 2019-07-19
 
+- upgrade all dependencies and regenerate `yarn.lock`
 - add new seed-webpack-bundle
 - add eslint & prettier support to seed-svelte-app
 - turn off formatOnPaste & formatOnSave by default
