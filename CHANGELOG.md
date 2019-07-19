@@ -1,5 +1,6 @@
 # 2019-07-19
 
+- make seed-webpack-bundle to export a commonjs module
 - remove comments from `seed-react-app/tsconfig.json` as they are not supported.
 - upgrade all dependencies and regenerate `yarn.lock`
 - add new seed-webpack-bundle

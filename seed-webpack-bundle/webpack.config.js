@@ -12,6 +12,7 @@ module.exports = {
     path: __dirname + '/build',
     filename: '[name].js',
     chunkFilename: '[name].[id].js',
+    libraryTarget: "commonjs",
   },
   module: {
     rules: [
