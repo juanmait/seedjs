@@ -1,5 +1,6 @@
 # 2019-07-19
 
+- make `seed-lib-webpack` to build & expose type declarations
 - rename `seed-webpack-bundle` to `seed-lib-webpack`
 - make seed-webpack-bundle to export a commonjs module
 - remove comments from `seed-react-app/tsconfig.json` as they are not supported.
