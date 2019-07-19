@@ -13,6 +13,9 @@
       "path": "seed-lib-node"
     },
     {
+      "path": "seed-lib-webpack"
+    },
+    {
       "path": "seed-process"
     },
     {
@@ -20,9 +23,6 @@
     },
     {
       "path": "seed-svelte-app"
-    },
-    {
-      "path": "seed-webpack-bundle"
     },
     {
       "path": "."

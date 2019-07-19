@@ -1,5 +1,5 @@
 {
-  "name": "seed-webpack-bundle",
+  "name": "seed-lib-webpack",
   "description": "This setup is for development of apps or programs that should be bundled to run in the browser.",
   "version": "1.0.0",
   "main": "build/bundle.js",
