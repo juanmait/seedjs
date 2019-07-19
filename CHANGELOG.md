@@ -1,3 +1,13 @@
+# 2019-07-19
+
+- add eslint & prettier support to seed-svelte-app
+- turn off formatOnPaste & formatOnSave by default
+
+# 2019-07-18
+
+- turn off prettier-eslint IDE integration on all workspaces since got broken
+  after eslint v6
+
 # 2019-07-16
 
 - upgrade electron dependency
@@ -9,12 +19,13 @@
 - fix all eslint configuration for ts files
 - rename all `.eslintrc.json` files to `.eslintrc.js`
 
-[template-webpack]:https://github.com/sveltejs/template-webpack
-[eslint-plugin-svelte3]:https://github.com/sveltejs/eslint-plugin-svelte3
+[template-webpack]: https://github.com/sveltejs/template-webpack
+[eslint-plugin-svelte3]: https://github.com/sveltejs/eslint-plugin-svelte3
 
 # 2019-07-14
 
-- add package `eslint-config-react-app-fix-override` to fix [eslint-config-react]
+- add package `eslint-config-react-app-fix-override` to fix
+  [eslint-config-react]
 - upgrade all packages dependencies & regenerate main `yarn.lock` file
 
 ## seed-electron-react-basic
