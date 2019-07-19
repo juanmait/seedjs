@@ -1,0 +1,88 @@
+{
+  "name": "seed-webpack-bundle",
+  "description": "This setup is for development of apps or programs that should be bundled to run in the browser.",
+  "version": "1.0.0",
+  "main": "build/bundle.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production BABEL_ENV=production webpack",
+    "build:dev": "yarn clean; cross-env NODE_ENV=development BABEL_ENV=development webpack",
+    "start": "cross-env NODE_ENV=development BABEL_ENV=development webpack --watch",
+    "serve": "cross-env NODE_ENV=development BABEL_ENV=development webpack-dev-server --content-base build",
+    "test": "jest",
+    "prebuild": "yarn clean && yarn fix && yarn lint && yarn checktypes",
+    "checktypes": "tsc",
+    "checkConflicts": "yarn checkEslint",
+    "checkEslint": "eslint --print-config .eslint.json | eslint-config-prettier-check",
+    "lint": "eslint 'src/**/*.+(js|ts)'",
+    "fix": "prettier-eslint 'src/**/*.+(js|ts)' --write",
+    "clean": "rm -rf build"
+  },
+  "engines": {
+    "node": ">=10.15.0"
+  },
+  "author": {
+    "name": "Juan M. Cañabate (@juanmait)"
+  },
+  "keywords": [
+    "scaffolding",
+    "typescript",
+    "prettier",
+    "jest"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/node": "^7.5.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.4",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/jest": "^24.0.15",
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.12.0",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
+    "babel-plugin-transform-node-env-inline": "^0.4.3",
+    "concurrently": "^4.1.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "husky": "^3.0.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^9.2.0",
+    "prettier": "^1.18.2",
+    "prettier-eslint-cli": "^5.0.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.{ts}": [
+      "yarn fix-ts",
+      "yarn lint-ts",
+      "yarn checkTypes"
+    ],
+    "*.{js}": [
+      "yarn fix-js",
+      "yarn lint-js"
+    ]
+  },
+  "files": [
+    "build",
+    "README.md",
+    "CHANGELOG.md"
+  ]
+}

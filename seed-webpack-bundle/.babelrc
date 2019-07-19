@@ -1,0 +1,34 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        /*
+         * read more about targets:
+         * https: //babeljs.io/docs/en/babel-preset-env#targets
+         */
+        "targets": {
+          // same settings as create-react-app
+          // see: https://github.com/browserslist/browserslist for more info..
+          "browsers": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+        }
+      }
+    ],
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread",
+
+    // see: https://babeljs.io/docs/en/babel-plugin-transform-node-env-inline
+    "transform-node-env-inline",
+
+    // see:
+    // https://babeljs.io/docs/en/babel-plugin-transform-inline-environment-variables
+    "transform-inline-environment-variables",
+
+    // plugin transform runtime requires the babel runtime
+    // instead of inline it in every file
+    "@babel/plugin-transform-runtime"
+  ]
+}

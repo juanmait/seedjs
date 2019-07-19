@@ -22,6 +22,9 @@
       "path": "seed-svelte-app"
     },
     {
+      "path": "seed-webpack-bundle"
+    },
+    {
       "path": "."
     }
   ],
