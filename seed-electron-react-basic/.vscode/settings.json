@@ -10,7 +10,7 @@
   "code-runner.preserveFocus": true,
   "code-runner.saveFileBeforeRun": true,
   "prettier.requireConfig": true,
-  "prettier.eslintIntegration": true,
+  "prettier.eslintIntegration": false,
   "prettier.tslintIntegration": false,
   "editor.formatOnSave": false,
   "editor.formatOnPaste": false,

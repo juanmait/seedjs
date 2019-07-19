@@ -9,9 +9,10 @@
   "code-runner.ignoreSelection": true,
   "code-runner.preserveFocus": true,
   "code-runner.saveFileBeforeRun": true,
+  "prettier.eslintIntegration": false,
   "prettier.requireConfig": true,
   "prettier.tslintIntegration": true,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.formatOnPaste": false,
   "search.exclude": {
     "**/node_modules": true,
@@ -26,6 +27,5 @@
     "dist/**": true,
     "build/**": true
   },
-  "json.format.enable": true,
-  "prettier.eslintIntegration": true
+  "json.format.enable": true
 }

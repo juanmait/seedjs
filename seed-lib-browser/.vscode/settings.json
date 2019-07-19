@@ -11,8 +11,8 @@
   "code-runner.saveFileBeforeRun": true,
   "prettier.requireConfig": true,
   "prettier.tslintIntegration": false,
-  "prettier.eslintIntegration": true,
-  "editor.formatOnSave": true,
+  "prettier.eslintIntegration": false,
+  "editor.formatOnSave": false,
   "editor.formatOnPaste": false,
   "search.exclude": {
     "**/node_modules": true,

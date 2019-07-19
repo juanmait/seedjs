@@ -1,9 +1,9 @@
 {
-  "prettier.requireConfig": true,
-  "prettier.eslintIntegration": true,
+  "prettier.requireConfig": false,
+  "prettier.eslintIntegration": false,
   "prettier.tslintIntegration": false,
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
@@ -16,6 +16,9 @@
     "**/node_modules/**": true,
     "dist/**": true,
     "build/**": true
+  },
+  "files.associations": {
+    "*.svelte": "html"
   },
   "eslint.validate": [
     "javascript",
