@@ -1,3 +1,7 @@
+# 2019-08-08
+
+- upgrade dependencies in `seed-lib-webpack` and `seed-svelte-app`
+
 # 2019-07-19
 
 - make `seed-lib-webpack` to build & expose type declarations
