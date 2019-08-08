@@ -66,6 +66,7 @@
   "include": ["src/**/*", "typings/**/*.d.ts"],
   "exclude": [
     "build",
+    "**/.tmp",
     "node_modules",
     "**/*.spec.ts",
     "**/*.test.ts",

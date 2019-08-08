@@ -4,7 +4,7 @@
   "code-runner.clearPreviousOutput": true,
   "code-runner.executorMapByGlob": {
     "*.(test|spec).(j|t)(sx|s)": "yarn test",
-    "*.(j|t)(sx|s)": "NODE_ENV=development BABEL_ENV=development node_modules/.bin/babel-node --extensions \".ts,.js,.tsx,.jsx,.svg,.css\""
+    "*.(j|t)(sx|s)": "NODE_ENV=development BABEL_ENV=development yarn babel-node --extensions \".ts,.js,.tsx,.jsx,.svg,.css\""
   },
   "code-runner.ignoreSelection": true,
   "code-runner.preserveFocus": true,

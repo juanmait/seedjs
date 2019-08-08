@@ -29,7 +29,7 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       parserOptions: {
         // This setting is required if you want to use rules which require type information
-        project: './tsconfig.json',
+        project: require.resolve('./tsconfig.json'),
         tsconfigRootDir: '.',
         ecmaVersion: 2019,
         sourceType: 'module',
