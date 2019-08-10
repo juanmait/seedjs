@@ -46,31 +46,12 @@
     "eslint": "^6.0.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.1",
-    "husky": "^3.0.1",
     "jest": "^24.8.0",
-    "lint-staged": "^9.2.0",
     "prettier": "^1.18.2",
     "prettier-eslint-cli": "^5.0.0",
     "typescript": "^3.5.3"
   },
   "dependencies": {},
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn test"
-    }
-  },
-  "lint-staged": {
-    "*.{ts}": [
-      "yarn fix-ts",
-      "yarn lint-ts",
-      "yarn checkTypes"
-    ],
-    "*.{js}": [
-      "yarn fix-js",
-      "yarn lint-js"
-    ]
-  },
   "files": [
     "build",
     "README.md",

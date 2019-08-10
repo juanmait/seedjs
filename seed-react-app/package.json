@@ -55,9 +55,7 @@
     "eslint-plugin-import": "^2.18.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.2",
-    "husky": "^3.0.1",
     "jest": "^24.8.0",
-    "lint-staged": "^9.2.0",
     "prettier": "^1.18.2",
     "prettier-eslint-cli": "^5.0.0",
     "react-scripts": "^3.0.1",
@@ -66,23 +64,6 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn test"
-    }
-  },
-  "lint-staged": {
-    "*.{ts}": [
-      "yarn fix-ts",
-      "yarn lint-ts",
-      "yarn checkTypes"
-    ],
-    "*.{js}": [
-      "yarn fix-js",
-      "yarn lint-js"
-    ]
   },
   "browserslist": [
     ">0.2%",

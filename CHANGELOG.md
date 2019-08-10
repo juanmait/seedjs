@@ -1,5 +1,6 @@
 # 2019-08-10
 
+- remove git hooks, husky & lint-staged
 - upgrade dependencies in `seed-lib-node`
   ```
   @types/jest                       ^24.0.15  →  ^24.0.17 
