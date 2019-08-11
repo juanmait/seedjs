@@ -1,7 +1,19 @@
+# 2019-08-11
+
+- upgrade dependencies in `seed-process`.
+  ```
+  @types/jest                       ^24.0.15  →  ^24.0.17
+  @types/node                        ^12.6.8  →   ^12.7.1
+  @typescript-eslint/eslint-plugin   ^1.12.0  →   ^1.13.0
+  @typescript-eslint/parser          ^1.12.0  →   ^1.13.0
+  eslint                              ^6.0.1  →    ^6.1.0
+  eslint-plugin-import               ^2.18.1  →   ^2.18.2
+  ```
+
 # 2019-08-10
 
-- remove git hooks, husky & lint-staged
-- upgrade dependencies in `seed-lib-node`
+- remove git hooks, husky & lint-staged.
+- upgrade dependencies in `seed-lib-node`.
   ```
   @types/jest                       ^24.0.15  →  ^24.0.17 
   @types/node                        ^12.6.8  →   ^12.7.1 
