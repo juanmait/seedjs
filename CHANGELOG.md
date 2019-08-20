@@ -1,3 +1,7 @@
+# 2019-08-20
+
+- add env parsing boilerplate `env.ts` in `seed-process`
+
 # 2019-08-11
 
 - add [dotenv] support in `seed-process`.
