@@ -1,5 +1,19 @@
 # 2019-08-20
 
+- upgrade dependencies of `seed-lib-node`
+
+  ```
+  @types/jest                       ^24.0.17  →  ^24.0.18
+  @types/node                        ^12.7.1  →   ^12.7.2
+  @typescript-eslint/eslint-plugin   ^1.13.0  →    ^2.0.0
+  @typescript-eslint/parser          ^1.13.0  →    ^2.0.0
+  babel-jest                         ^24.8.0  →   ^24.9.0
+  concurrently                        ^4.1.1  →    ^4.1.2
+  eslint                              ^6.1.0  →    ^6.2.1
+  eslint-config-prettier              ^6.0.0  →    ^6.1.0
+  jest                               ^24.8.0  →   ^24.9.0
+  ```
+
 - add env parsing boilerplate `env.ts` in `seed-process`
 - upgrade dependencies of `seed-process`
   ```
