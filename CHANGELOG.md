@@ -1,3 +1,13 @@
+# 2019-08-25
+
+- remove rule `@typescript-eslint/no-angle-bracket-type-assertion` from
+  `seed-process/.eslintrc.js` as is not any more
+- upgrade dependencies of `seed-process`
+  ```
+  babel-eslint  ^10.0.2  →  ^10.0.3
+  eslint         ^6.2.1  →   ^6.2.2
+  ```
+
 # 2019-08-20
 
 - upgrade dependencies of `seed-lib-node`

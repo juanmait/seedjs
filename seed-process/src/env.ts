@@ -41,6 +41,6 @@ console.info(`
     -------------------------------------------------------------
     HOST:       ${HOST}
     PORT:       ${PORT}
-    NODE_ENV:   ${PORT}
-    BABEL_ENV:  ${PORT}
+    NODE_ENV:   ${NODE_ENV}
+    BABEL_ENV:  ${BABEL_ENV}
     `)
