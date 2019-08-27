@@ -4,6 +4,9 @@
       "path": "seed-electron-react-basic"
     },
     {
+      "path": "seed-electron-ts"
+    },
+    {
       "path": "seed-lib-agnostic"
     },
     {
@@ -30,7 +33,7 @@
   ],
   "settings": {
     "files.exclude": {
-      "seed-*": true,
+      "seed-*": false,
       "eslint-config-react-app-fix-override": false
     },
     "cSpell.words": ["checktypes", "envs", "prebuild", "unmount"],

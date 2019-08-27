@@ -1,3 +1,7 @@
+# 2019-08-27
+
+- add simple `seed-electron-ts`
+
 # 2019-08-26
 
 - upgrade dependencies of `seed-svelte-app`

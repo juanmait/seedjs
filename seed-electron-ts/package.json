@@ -1,0 +1,46 @@
+{
+  "name": "seed-electron-ts",
+  "version": "1.0.0",
+  "description": "Just a simple boilerplate that showcase the use of electron and typescript",
+  "main": "build/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=development electron --require ./babel-register.js src/index.ts",
+    "watch": "yarn build:dev --watch",
+    "test": "jest",
+    "build:dev": "NODE_ENV=development babel src --out-dir build --extensions '.ts,.js' --source-maps inline --ignore 'src/**/*.spec.ts,src/**/*.spec.js,src/**/*.test.ts,src/**/*.test.js,src/eslint-no-cry.js'",
+    "build": "NODE_ENV=production babel src --out-dir build --extensions '.ts,.js' --source-maps inline --ignore 'src/**/*.spec.ts,src/**/*.spec.js,src/**/*.test.ts,src/**/*.test.js,src/eslint-no-cry.js'",
+    "prebuild": "yarn fix && yarn lint && yarn checkTypes && yarn test",
+    "checkTypes": "tsc --skipLibCheck false",
+    "checkEslint": "eslint --print-config . | eslint-config-prettier-check",
+    "lint": "eslint 'src/**/*.+(js|ts)'",
+    "fix": "prettier-eslint 'src/**/*.+(js|ts)' --write",
+    "clean": "rm -rf build"
+  },
+  "dependencies": {
+    "electron": "^6.0.4",
+    "electron-is-dev": "^1.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "@babel/register": "^7.5.5",
+    "@types/electron-is-dev": "^1.1.1",
+    "@types/node": "^12.7.2",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "babel-eslint": "^10.0.3",
+    "concurrently": "^4.1.2",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "prettier": "^1.18.2",
+    "prettier-eslint-cli": "^5.0.0",
+    "typescript": "^3.5.3"
+  }
+}
