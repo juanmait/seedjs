@@ -1,5 +1,35 @@
+# 2019-08-26
+
+- upgrade dependencies of `seed-svelte-app`
+  ```
+  babel-eslint            ^10.0.2  →  ^10.0.3
+  eslint                   ^6.1.0  →   ^6.2.2
+  eslint-config-prettier   ^6.0.0  →   ^6.1.0
+  svelte                   ^3.7.1  →   ^3.9.1
+  webpack                 ^4.39.1  →  ^4.39.2
+  webpack-cli              ^3.3.6  →   ^3.3.7
+  webpack-dev-server       ^3.7.2  →   ^3.8.0
+  ```
+
 # 2019-08-25
 
+- upgrade dependencies in `seed-lib-agnostic`
+
+  ```
+  @types/jest                       ^24.0.15  →  ^24.0.18
+  @typescript-eslint/eslint-plugin   ^1.12.0  →    ^2.0.0
+  @typescript-eslint/parser          ^1.12.0  →    ^2.0.0
+  babel-eslint                       ^10.0.2  →   ^10.0.3
+  babel-jest                         ^24.8.0  →   ^24.9.0
+  concurrently                        ^4.1.1  →    ^4.1.2
+  eslint                              ^6.0.1  →    ^6.2.2
+  eslint-config-prettier              ^6.0.0  →    ^6.1.0
+  eslint-plugin-import               ^2.18.1  →   ^2.18.2
+  jest                               ^24.8.0  →   ^24.9.0
+  ```
+
+- remove rule `@typescript-eslint/no-angle-bracket-type-assertion` from
+  `seed-lib-node/.eslintrc.js` as is not any more
 - remove rule `@typescript-eslint/no-angle-bracket-type-assertion` from
   `seed-process/.eslintrc.js` as is not any more
 - upgrade dependencies of `seed-process`

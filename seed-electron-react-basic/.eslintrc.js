@@ -5,7 +5,7 @@ module.exports = {
     'prettier',
   ],
   parserOptions: {
-    project: './tsconfig.json',
+    project: require.resolve('./tsconfig.json'),
   },
   rules: {
     '@typescript-eslint/explicit-function-return-type': 0,
