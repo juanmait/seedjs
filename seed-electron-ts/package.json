@@ -18,7 +18,7 @@
     "clean": "rm -rf build"
   },
   "dependencies": {
-    "electron": "^6.0.4",
+    "electron": "^9.1.0",
     "electron-is-dev": "^1.1.0"
   },
   "devDependencies": {
